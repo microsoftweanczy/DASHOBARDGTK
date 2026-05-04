@@ -10,7 +10,7 @@ import {
 
 // --- KONFIGURASI API GOOGLE SHEETS ---
 // Ganti URL ini dengan URL Web App Google Apps Script Anda nantinya
-const GOOGLE_APPS_SCRIPT_URL = ""; 
+const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbztgACqoZ-oa95J4DUMPyaRKN6wCtluKF6ahUYsIRPIsH7p1mjTjsEn_WLE278dY4KErg/exec"; 
 
 // --- WARNA TEMA (Apple iOS/MacOS style) ---
 const COLORS = ['#007AFF', '#34C759', '#FF9500', '#FF3B30', '#5856D6', '#5AC8FA', '#FF2D55'];
