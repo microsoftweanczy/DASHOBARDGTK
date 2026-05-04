@@ -48,7 +48,7 @@ export default function App() {
         if (SUPABASE_URL && SUPABASE_ANON_KEY) {
           // Asumsi nama tabel di Supabase Anda adalah 'gtk_data'
           // Menggunakan REST API Supabase bawaan (PostgREST)
-          const response = await fetch(`${SUPABASE_URL}/rest/v1/gtk_data?select=*`, {
+          const response = await fetch(`${SUPABASE_URL}/rest/v1/dapodik_maret_2026?select=*`, {
             method: 'GET',
             headers: {
               'apikey': SUPABASE_ANON_KEY,
