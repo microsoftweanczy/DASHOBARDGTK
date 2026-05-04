@@ -13,17 +13,39 @@ Production / Build
 /dist
 /build
 
-Misc
+--- KEAMANAN API KEY & KREDENSIAL (SANGAT PENTING) ---
 
-.DS_Store
+Mengabaikan semua file environment yang menyimpan API Key, URL Database, dll.
+
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env
+.env.
+
+Mengabaikan file konfigurasi spesifik IDE atau alat yang mungkin menyimpan token
+
+.vscode/
+.idea/
+
+Mengabaikan file kunci rahasia (seperti SSH atau kunci Firebase)
+
+*.pem
+*.key
+*.pub
+credentials.json
+service-account.json
+
+--- MISC ---
+
+.DS_Store
+Thumbs.db
 
 Logs
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
