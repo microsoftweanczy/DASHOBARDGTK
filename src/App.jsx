@@ -135,7 +135,7 @@ export default function App() {
     { id: 'dashboard', label: 'Dashboard Utama', icon: Activity },
     { id: 'sebaran', label: 'Sebaran & Total GTK', icon: Map },
     { id: 'pensiun', label: 'Proyeksi Pensiun', icon: Calendar },
-    { id: 'status', label: 'Status ASN & Swasta', icon: Building2 },
+    { id: 'status', label: 'Status ASN & Non ASN', icon: Building2 },
     { id: 'pengangkatan', label: 'Pengangkatan', icon: Briefcase },
     { id: 'sertifikasi', label: 'Sertifikasi', icon: Award },
     { id: 'kualifikasi', label: 'Kualifikasi Belum S1', icon: GraduationCap },
