@@ -16,19 +16,7 @@ const SUPABASE_ANON_KEY =import.meta.env.VITE_SUPABASE_ANON_KEY;
 // --- WARNA TEMA (Apple iOS/MacOS style) ---
 const COLORS = ['#007AFF', '#34C759', '#FF9500', '#FF3B30', '#5856D6', '#5AC8FA', '#FF2D55'];
 
-// --- MOCK DATA SIMULASI (Digunakan jika Supabase kosong/gagal) ---
-const mockGtkData = [
-  { id: 1, nama: "Yosep Suyono, S.Pd", nuptk: "1234567890", sekolah: "SDN 1 Komodo", kecamatan: "Komodo", status: "PNS", jenis_sekolah: "Negeri", pengangkatan: "Pemda", sertifikasi: "Sudah", kualifikasi: "S1", jenjang: "SD", pensiun_tahun: 2025, gasing: "Ikut 2025", pangkat: "IV/a", alamat: "Jl. Soekarno Hatta, Labuan Bajo" },
-  { id: 2, nama: "Maria Goreti, S.Pd", nuptk: "0987654321", sekolah: "SMPN 1 Lembor", kecamatan: "Lembor", status: "PPPK", jenis_sekolah: "Negeri", pengangkatan: "Pemda", sertifikasi: "Belum", kualifikasi: "S1", jenjang: "SMP", pensiun_tahun: 2030, gasing: "Ikut 2026", pangkat: "IX", alamat: "Wae Nakeng, Lembor" },
-  { id: 3, nama: "Agustinus Djehadut", nuptk: "1122334455", sekolah: "SDK Ruteng 1", kecamatan: "Sano Nggoang", status: "Komite", jenis_sekolah: "Swasta", pengangkatan: "Yayasan", sertifikasi: "Belum", kualifikasi: "Belum S1", jenjang: "SD", pensiun_tahun: 2040, gasing: "Tidak", pangkat: "-", alamat: "Werang, Sano Nggoang" },
-  { id: 4, nama: "Dra. Siti Aminah", nuptk: "2233445566", sekolah: "SMPN 2 Komodo", kecamatan: "Komodo", status: "PNS", jenis_sekolah: "Negeri", pengangkatan: "Depak", sertifikasi: "Sudah", kualifikasi: "S1", jenjang: "SMP", pensiun_tahun: 2026, gasing: "Tidak", pangkat: "IV/b", alamat: "Batu Cermin, Labuan Bajo" },
-  { id: 5, nama: "Fransiskus Xaverius", nuptk: "3344556677", sekolah: "SDN Wae Mata", kecamatan: "Macang Pacar", status: "PPPK PW", jenis_sekolah: "Negeri", pengangkatan: "Pemda", sertifikasi: "Sudah", kualifikasi: "S1", jenjang: "SD", pensiun_tahun: 2028, gasing: "Ikut 2025", pangkat: "IX", alamat: "Bari, Macang Pacar" },
-  { id: 6, nama: "Katarina Muti", nuptk: "4455667788", sekolah: "TK Pertiwi", kecamatan: "Mbeliling", status: "Komite", jenis_sekolah: "Negeri", pengangkatan: "Pemda", sertifikasi: "Belum", kualifikasi: "Belum S1", jenjang: "PAUD", pensiun_tahun: 2035, gasing: "Tidak", pangkat: "-", alamat: "Melo, Mbeliling" },
-  { id: 7, nama: "Yohanes Babtista, M.Pd", nuptk: "5566778899", sekolah: "SMPK Loyola", kecamatan: "Komodo", status: "PNS", jenis_sekolah: "Swasta", pengangkatan: "Pemda", sertifikasi: "Sudah", kualifikasi: "S2", jenjang: "SMP", pensiun_tahun: 2025, gasing: "Ikut 2026", pangkat: "IV/a", alamat: "Jl. Reklamasi, Labuan Bajo" },
-  { id: 8, nama: "Petrus Nggala", nuptk: "6677889900", sekolah: "SDI Watu Wangka", kecamatan: "Ndoso", status: "PNS", jenis_sekolah: "Negeri", pengangkatan: "Pemda", sertifikasi: "Belum", kualifikasi: "Belum S1", jenjang: "SD", pensiun_tahun: 2027, gasing: "Ikut 2025", pangkat: "III/b", alamat: "Ndoso" },
-  { id: 9, nama: "Theresia Luju, S.Pd", nuptk: "7788990011", sekolah: "SMPN 1 Kuwus", kecamatan: "Kuwus", status: "PPPK", jenis_sekolah: "Negeri", pengangkatan: "Pemda", sertifikasi: "Sudah", kualifikasi: "S1", jenjang: "SMP", pensiun_tahun: 2032, gasing: "Ikut 2026", pangkat: "IX", alamat: "Golowelu, Kuwus" },
-  { id: 10, nama: "Dominikus Jolo", nuptk: "8899001122", sekolah: "SDN Lembor Selatan", kecamatan: "Lembor Selatan", status: "Komite", jenis_sekolah: "Negeri", pengangkatan: "Desa", sertifikasi: "Belum", kualifikasi: "Belum S1", jenjang: "SD", pensiun_tahun: 2045, gasing: "Tidak", pangkat: "-", alamat: "Lengkong, Lembor Selatan" },
-];
+
 
 export default function App() {
   const [data, setData] = useState([]);
